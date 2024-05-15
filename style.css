@@ -1,0 +1,453 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.main-page{
+   box-shadow: 2px 1px 3px black;
+  
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: yellow;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(176, 32, 178);
+}
+::selection{
+    background-color: rgb(37, 37, 80);
+    
+}
+header{
+    background-color:rgb(252, 133, 153);
+    max-width: 100%;
+    height: 100px;
+}
+:root{
+    --pink:rgb(252, 133, 153);
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width:150px;
+    height: 100px;
+   animation: lo 2s linear infinite;
+}
+@keyframes lo{
+    0%{
+      
+       transform: scale(.8,.8);
+    }
+    25%{
+        
+        transform: scale(1,1);
+    }
+    50%
+    {
+      
+        transform: scale(.8,.8);
+    }
+    75%{
+        
+        transform: scale(1,1);  
+    }
+    100%{
+      
+        transform: scale(.8,.8);
+    }
+
+}
+.logo{
+    padding: 30px 0;
+   
+}
+li{
+    list-style: none;
+    padding: 30px 50px;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 25px;
+    color: aliceblue;
+    font-family:cursive;
+    transition:height 4s linear;
+   }
+li:hover
+{
+   /*  width: 200px;*/
+    height: 100px;
+    color: var(--pink);
+    background-color: aliceblue;
+    border-radius: 40%;
+    border-style: dotted;
+   transition: linear;
+  
+  
+}
+.donut{
+    background-image: url('/Bakery/Pastry_Donuts.jpg');
+    max-width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+h1{
+   position: absolute;
+   right: 15%;
+   top:38%;
+   color: aliceblue;
+   font-family: cursive;
+   font-size: 90px;
+   text-shadow: 1px 2px 3px rgb(220, 4, 4);
+}
+h6{
+    
+    width: 600px;
+    word-wrap: break-word;
+    position: absolute;
+   right: 5%;
+   top:55%;
+   color: aliceblue;
+   font-family: cursive;
+   font-size: 50px;
+   text-shadow: 1px 2px 3px yellow;
+}
+.we{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 70px;
+    gap:70px;
+}
+.bake h3{
+  color: var(--pink);
+  font-family: cursive;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.bake p{
+    text-transform: capitalize;
+    font-family:monospace;
+  /*  border: 1px solid red;*/
+    width: 700px;
+    font-size:18px;
+    text-indent: 20px;
+    font-weight: lighter;
+    color: rgb(49, 46, 46);
+}
+a{
+   position: absolute;
+   left:5%;
+   top:183%;
+}
+.bake .btn{
+    border-radius: 20px;
+    background-color: var(--pink);
+    text-decoration: none;
+    font-size: 18px;
+    color:azure;
+    padding: 20px 10px;
+    font-family:monospace;
+}
+.bake .btn:hover{
+    border-style: double;
+    background-color: white;
+    color: var(--pink);
+}
+.cups{
+   max-width: 100%;
+   height: auto; 
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 50px;
+
+}
+.cups img:hover{
+    animation: cup 0.5s linear;
+}
+@keyframes cup{
+to{
+   transform:  scale(1.032);
+}
+from{
+   transform:  scale(.5);
+}
+}
+
+/*service*/
+.service{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jms5bm-csmIVephOg871fP7rwy2ejPRXckD6AlwAbj1ljc8cniR45v9fjnVJ4gofa1M&usqp=CAU');
+    background-size: cover;
+    background-repeat:no-repeat;
+   
+    max-height: 100%;
+    color: azure;
+}
+h2{
+font-family: cursive;
+text-align: center;
+font-size: 60px;
+padding: 20px 0;
+font-style: italic;
+text-shadow: 2px 3px 4px darkgrey;
+}
+.our{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding:15px 150px;
+    gap:90px;
+    
+}
+.our i{
+    font-size:60px;
+    padding: 10px 0;
+    position:relative;
+    left: 30%;
+    color: azure;
+    background-color: var(--pink);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
+   
+}
+.our i:hover{
+    animation: rot 2s linear infinite;
+    border: 6px double var(--pink);
+    background: transparent;
+}
+@keyframes rot{
+    to{
+       transform: rotate(360deg);
+    }
+    from{
+       transform:rotate(0) ;
+    }
+}
+.our h3{
+    font-size:30px ;
+    font-family: cursive;
+    font-style: italic;
+    padding: 10px 0;
+    position:relative;
+    left: 10%;
+}
+.our p{
+    font-size: 20px;
+    font-family:monospace;
+    }
+
+    /*products*/
+    .product{
+        margin: 30px;
+        padding: 20px;
+        position: relative;
+    }
+.product h2{
+    color: var(--pink);
+}  
+.product .pr{
+    padding: 20px 90px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:30px 60px;
+   
+}  
+.vanila ,.choko,.crispy,.stro,.vale,.blu{
+    background-color: var(--pink);
+    width: 400px;
+    height: 400px;
+}
+ .vanila img, .choko img, .crispy img ,.stro img,.vale img,  .blu img{
+    width: 100%;
+    background-color: var(--pink);
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+   cursor: pointer;
+}
+.pr img:hover{
+    filter:opacity(70%);
+    
+}
+.pr h3,p{
+    font-family: cursive;
+    color: azure;
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+}
+.pr p{
+    font-size: 20px;
+}
+.pr .btnn{
+    border-radius: 20px;
+    background-color:azure;
+    text-decoration: none;
+    font-size: 18px;
+    color:var(--pink);
+    padding: 10px 10px;
+    font-family:monospace;
+   margin-left: 150px;
+   margin-top: 10px;
+    
+}
+
+.pr .btnn:hover{
+    border: 7px white double;
+    background-color: transparent;
+    color:azure;
+   
+}
+/*happy*/
+.happy{
+    background-image: url('/Bakery/sevice.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: azure;
+    
+   padding: 30px 90px;
+  max-width: 100%;
+ max-height: 100%;
+position: relative;
+ display: flex;
+ justify-content: space-between;
+}
+.happy i{
+    font-size: 90px;
+    color: rgb(93, 91, 91);
+    opacity: 0.7;
+}
+.happy number{
+          font-family: cursive;
+          font-style: italic;
+          font-size: 30px;
+        
+          
+}
+.h number {
+    position: absolute;
+          top: 10%;
+          left: 10%;
+}
+.h h3 {
+    position: absolute;
+          top: 40%;
+          left: 9%;
+          font-family: cursive;
+          font-style: italic;
+          font-size: 25px;
+}
+.ca number{
+    position: absolute;
+    top: 10%;
+    left:36%;
+}
+.ca h3{
+    position: absolute;
+    top: 40%;
+    left: 36%;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 25px;
+}
+.kit number{
+    position: absolute;
+    top: 10%;
+    left: 64%;
+}
+.kit h3{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 25px;
+}
+.tru number{
+    position: absolute;
+          top: 10%;
+          left: 91%;
+    
+}
+.tru h3{
+    position: absolute;
+    top: 40%;
+    left: 91%;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 25px;
+}
+footer{
+    padding: 50px 30px;
+}
+footer .im{
+    text-align: center;
+    cursor: pointer;
+}
+footer .all{
+    color: var(--pink);
+    font-size: 30px;
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+    padding: 30px 0;
+}
+footer .ad{
+    display: grid;
+    grid-template-columns: auto auto;
+ text-align: center;
+ color: var(--pink);
+ font-family: monospace;
+ font-size: 18px;
+
+
+ position: relative;
+}
+footer .ad .a{
+   
+    position: absolute;
+    left: 35%;
+}
+footer .ad .d{
+    position: absolute;
+    left: 45%;
+}
+footer .log{
+    padding: 80px 70px;
+  
+}
+footer .log i{
+    
+   width: 50px;
+    height: 50px;
+   border-radius: 50%;
+    background-color: var(--pink);
+    color: azure;
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  left: 38%;
+
+}
+footer .log i:hover{
+    background-color: azure;
+    color: var(--pink);
+    border: 3px double var(--pink);
+}
+ .copy{
+    background-color: var(--pink);
+    color: azure;
+   height: 80px;
+   max-width: 100%;
+   text-align: center;
+   padding: 30px 0;
+   font-family: monospace;
+   font-size: 20px;
+}
